@@ -30,7 +30,7 @@ else
                     <tr>
                         <td>@eng.Name</td>
                         <td>@eng.Country</td>
-                        <td>@eng.Specialty</td>
+                        @* <td>@eng.Specialty</td> *@
                         <td>
                             <a href=@($"Upsert/{eng.Id}") class="btn btn-primary"><span class="oi oi-pencil" /> </a>
                             <button class="btn btn-danger" @onclick="async () => await DeleteEngineer(eng.id)"><span class="oi oi-trash" /></button>
