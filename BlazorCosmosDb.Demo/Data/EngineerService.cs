@@ -26,7 +26,7 @@ namespace BlazorCosmosDb.Demo.Data
                     engineer.Id = Guid.NewGuid();
                 }
                 var container = GetContainerClient();
-                var updateRes = await container.UpsertItemAsync(engineer, new PartitionKey(engineer.id.ToString()));
+                var updateRes = await container.UpsertItemAsync(engineer, new PartitionKey(engineer.Id.ToString()));
                 Console.Write(updateRes.StatusCode);
             }
             catch (Exception ex)
