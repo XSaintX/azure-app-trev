@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+	<RootNamespace>BlazorCosmosDb.Demo.Data</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,5 +14,5 @@
   <ItemGroup>
     <Folder Include="Pages\" />
   </ItemGroup>
-
+	
 </Project>

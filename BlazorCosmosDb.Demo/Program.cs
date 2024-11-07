@@ -1,5 +1,5 @@
-using BlazorCosmosDb.Demo.Components;
 using BlazorCosmosDb.Demo.Data;
+using BlazorCosmosDb.Demo.Data.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
