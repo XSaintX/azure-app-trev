@@ -1,4 +1,3 @@
-using BlazorCosmosDb.Demo.Components;
 using BlazorCosmosDb.Demo.Data;
 
 var builder = WebApplication.CreateBuilder(args);
