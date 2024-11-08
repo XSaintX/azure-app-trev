@@ -2,14 +2,15 @@
 @page "/upsert/{id}"
 @using BlazorCosmosDb.Demo.Data
 @using Microsoft.AspNetCore.Components.Web
-
+@using Microsoft.AspNetCore.Components.Forms
 @inject IEngineerService engineerService;
 @inject NavigationManager NavManager;
 
 <h3>Upsert Engineer</h3>
 <EditForm Model="@engineer">
     <div class="form-group row p-2">
-        <input type="hidden" @bind-value="engineer.Id" />
+
+        <input type="hidden" @bind-value="@engineer.Id"/>
         <div class="col-md-6">
             <input type="text" class="form-control" placeholder="Name" @bind-value="engineer.Name" />
         </div>
@@ -33,7 +34,7 @@
 </EditForm>
 
 @code {
-    Engineer engineer = new();
+    public Engineer engineer { get; set; } = new();
 
     [Parameter]
     public string? id { get; set; }
