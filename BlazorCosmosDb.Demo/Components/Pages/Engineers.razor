@@ -1,4 +1,4 @@
-﻿@page "/"
+﻿@page "/engineers"
 @using BlazorCosmosDb.Demo.Data
 @inject IEngineerService engineerService
 
@@ -33,7 +33,7 @@ else
                         <td>@eng.Speciality</td> 
                         <td>
                             <a href=@($"Upsert/{eng.Id}") class="btn btn-primary"><span class="oi oi-pencil" /> </a>
-                            <button class="btn btn-danger" @onclick="async () => await DeleteEngineer(eng.id)"><span class="oi oi-trash" /></button>
+                            <button class="btn btn-danger" @onclick="async () => await DeleteEngineer(eng.Id)"><span class="oi oi-trash" /></button>
                         </td>
                     </tr>
                 }

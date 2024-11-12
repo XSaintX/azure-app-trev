@@ -10,9 +10,5 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.45.0" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Pages\" />
-  </ItemGroup>
 	
 </Project>
